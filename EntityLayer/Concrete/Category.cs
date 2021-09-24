@@ -16,5 +16,6 @@ namespace EntityLayer.Concrete
 
         public string CategoryDesctiption { get; set; }
         public bool CategoryStatus { get; set; }
+        public List<Blog> Blogs { get; set; }
     }
 }
