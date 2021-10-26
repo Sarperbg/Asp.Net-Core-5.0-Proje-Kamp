@@ -5,14 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccessLayer.Repositories;
 
 namespace BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {
+        CategoryRepository categoryRepository = new CategoryRepository();
+
         public void CategoryAdd(Category category)
         {
-            throw new NotImplementedException();
+          categoryRepository.AddCategory(category);
         }
 
         public void CategoryDelete(Category category)
